@@ -1,0 +1,48 @@
+:host {
+  all: unset;
+  display: block;
+  margin: 16px;
+  
+}
+
+.button {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.button.button--size-small { 
+  font-size:12px;
+  height: 24px;
+}
+
+.button.button--size-large { 
+  font-size:16px;
+  height: 36px;
+}
+
+
+.button.button--variant-primary {
+  background-color:blue;
+  color: white;
+  border-radius: 18px;
+  border: none;
+  border-width: 0px;
+  border-style: none;
+}
+
+.button.button--variant-primary:not(.button--size-large) {
+  border-radius: 12px;
+}
+
+.button.button--variant-secondary {
+  background-color:white;
+  color: blue;
+  border-width: 1px;
+  border-color: blue;
+  border-radius: 3px;
+}
+
+.button.button--disabled {
+  background-color: #999;
+  color: #777;
+}
