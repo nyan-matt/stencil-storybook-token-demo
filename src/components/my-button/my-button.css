@@ -1,3 +1,5 @@
+@import '../../css/_variables.css';
+
 :host {
   all: unset;
   display: block;
@@ -22,7 +24,7 @@
 
 
 .button.button--variant-primary {
-  background-color:blue;
+  background-color: var(--primary-color);
   color: white;
   border-radius: 18px;
   border: none;
@@ -36,9 +38,9 @@
 
 .button.button--variant-secondary {
   background-color:white;
-  color: blue;
+  color: var(--primary-color);
   border-width: 1px;
-  border-color: blue;
+  border-color: var(--primary-color);
   border-radius: 3px;
 }
 
