@@ -1,4 +1,6 @@
-@import '../../css/_variables.css';
+@import '../../css/base.css';
+@import '../../css/brand-a.css';
+@import '../../css/brand-b.css';
 
 :host {
   all: unset;
@@ -24,7 +26,7 @@
 
 
 .button.button--variant-primary {
-  background-color: var(--primary-color);
+  background-color: var(--color-primary-default);
   color: white;
   border-radius: 18px;
   border: none;
@@ -38,9 +40,9 @@
 
 .button.button--variant-secondary {
   background-color:white;
-  color: var(--primary-color);
+  color: var(--color-primary-default);
   border-width: 1px;
-  border-color: var(--primary-color);
+  border-color: var(--color-primary-default);
   border-radius: 3px;
 }
 

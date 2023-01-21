@@ -8,7 +8,7 @@ export default {
     disabled: { control: 'boolean' }, 
     variant: {
       control: {
-        type: 'select',
+        type: 'inline-radio',
         options: [
           'primary',
           'secondary'

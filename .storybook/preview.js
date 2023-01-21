@@ -1,5 +1,4 @@
 import { html } from 'lit-html';
-import { StoryContext, StoryGetter, StoryWrapper } from '@storybook/addons';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -7,15 +6,16 @@ export const parameters = {
 
 export const globalTypes = {
   theme: {
-    name: 'Theme',
+    name: 'Component Theme',
     description: 'Global theme for components',
-    defaultValue: 'theme-a',
+    defaultValue: 'brand-a-theme',
     toolbar: {
-      icon: 'circlehollow',
+      
+  
       // array of plain string values or MenuItem shape (see below)
       items: [
-        {value: 'theme-a', title: 'Theme A'},
-        {value: 'theme-b', title: 'Theme B'}
+        {value: 'brand-a-theme', title: 'Theme A'},
+        {value: 'brand-b-theme', title: 'Theme B'}
       ],
     },
   },
