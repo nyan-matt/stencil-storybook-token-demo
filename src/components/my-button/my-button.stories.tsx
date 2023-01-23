@@ -11,16 +11,17 @@ export default {
         type: 'inline-radio',
         options: [
           'primary',
-          'secondary'
+          'secondary',
+          'tertiary'
         ],
       },
     },
     size: {
       control: {
-        type: 'select',
+        type: 'inline-radio',
         options: [
-          'small',
-          'large'
+          'large',
+          'small'
         ],
       },
     },
@@ -41,21 +42,21 @@ const Template = ({ label, variant, size, disabled }) => (
   `
 )
 
-export const ThemeA = Template.bind({});
-ThemeA.args = {
+export const MultiTheme = Template.bind({});
+MultiTheme.args = {
   size: 'large',
   variant: 'primary',
   disabled: false,
-  label: 'Foo bar AAA',
+  label: 'Multi theme button',
 };
 
-export const ThemeB = Template.bind({});
-ThemeB.args = {
-  size: 'large',
-  variant: 'secondary',
-  disabled: false,
-  label: 'Foo bar BBB',
-};
+// export const ThemeB = Template.bind({});
+// ThemeB.args = {
+//   size: 'large',
+//   variant: 'secondary',
+//   disabled: false,
+//   label: 'Foo bar BBB',
+// };
 
 
 // export const ButtonThemeA = ({ label, variant, size, disabled }) => html`
