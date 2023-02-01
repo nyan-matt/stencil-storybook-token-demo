@@ -2,6 +2,8 @@
 @import '../../css/brand-a.css';
 @import '../../css/brand-b.css';
 
+/* TODO: move base to preview.js */
+
 :host {
   all: unset;
   display: block;
