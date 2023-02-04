@@ -17,7 +17,6 @@
   padding-left: var(--button-padding-left);
   padding-right: var(--button-padding-right);
   font-family: var(--button-font-family);
-  text-transform: uppercase;
 }
 
 /* button sizing styles */
