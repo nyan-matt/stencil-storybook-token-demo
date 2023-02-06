@@ -1,6 +1,6 @@
 on:
   push:
-    paths: ["src/components/**", "src/stories/**", "src/css"]
+    paths: ["src/components/**", "src/stories/**", "src/css/**"]
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
