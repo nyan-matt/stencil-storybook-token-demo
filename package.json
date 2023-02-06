@@ -29,7 +29,7 @@
     "generate": "stencil generate",
     "storybook:dev": "start-storybook -p 6006",
     "storybook": "npm run build && npm-run-all --parallel build:watch storybook:dev",
-    "build-storybook": "npm run build && build-storybook"
+    "build-storybook": "npm run build && build-storybook -o docs"
   },
   "dependencies": {
     "@stencil/core": "~1.17.3",
