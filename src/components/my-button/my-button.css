@@ -1,0 +1,92 @@
+@import '../../css/base.css';
+@import '../../css/brand-a.css';
+@import '../../css/brand-b.css';
+
+/* TODO: move base to preview.js */
+
+:host {
+  all: unset;
+  display: block;
+  margin: 16px;
+  
+}
+
+/* button base styles */
+
+.button {
+  padding-left: var(--button-padding-left);
+  padding-right: var(--button-padding-right);
+  font-family: var(--button-font-family);
+}
+
+/* button sizing styles */
+
+.button.button--size-small { 
+  font-size: var(--button-typography-sm-font-size);
+  height: var(--button-height-sm);
+  font-weight: var(--button-typography-sm-font-weight);
+}
+
+.button.button--size-large { 
+  font-size: var(--button-typography-lg-font-size);
+  height: var(--button-height-lg);
+  font-weight: var(--button-typography-lg-font-weight);
+}
+
+/* button variant styles */
+
+.button.button--variant-primary {
+  background-color: var(--color-primary-default);
+  color: white;
+  border-radius: var(--button-radius);
+  border: none;
+  border-width: 0px;
+  border-style: none;
+}
+.button.button--variant-primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.button.button--variant-primary.button--disabled {
+  background-color: var(--color-disabled-background);
+  color: var(--color-disabled-text);
+}
+
+
+.button.button--variant-secondary {
+  background-color:white;
+  color: var(--color-primary-default);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-primary-default);
+  border-radius: var(--button-radius);
+}
+
+.button.button--variant-secondary:hover {
+  border-color: var(--color-primary-hover);
+  color: var(--color-primary-hover);
+}
+
+.button.button--variant-secondary.button--disabled {
+  border-color: var(--color-disabled-border);
+  color: var(--color-disabled-text);
+}
+
+
+
+.button.button--variant-tertiary {
+  background-color:transparent;
+  color: var(--color-primary-default);
+  border-width: 0px;
+  border-color: var(--color-primary-default);
+  border-radius: var(--button-radius); 
+}
+
+.button.button--variant-tertiary:hover {
+  color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.button.button--variant-tertiary.button--disabled {
+  color: var(--color-disabled-text);
+}
