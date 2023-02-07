@@ -1,3 +1,5 @@
+## TODO
+
 on:
   push:
     paths: ["src/components/**", "src/stories/**", "src/css/**"]
@@ -16,4 +18,4 @@ jobs:
         with:
           branch: main
           folder: docs
-          clean: true
+          target-folder: docs
