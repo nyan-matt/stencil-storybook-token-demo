@@ -5,7 +5,7 @@ on:
     paths: ["src/components/**", "src/stories/**", "src/css/**"]
     branches: main
 jobs:
-  build_and_deploy:
+  build_storybook:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -14,9 +14,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          run: |
-            npm install
-            npm run build-storybook
+      - run: npm install
+      - run: npm run build-storybook
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
