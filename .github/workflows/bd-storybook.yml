@@ -18,6 +18,7 @@ jobs:
       - run: npm run build-storybook
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
+          branch: gh-pages
           commit_message: build storybook
       
 #       - name: Deploy
