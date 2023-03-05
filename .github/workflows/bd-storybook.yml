@@ -1,6 +1,7 @@
 ## TODO
 
 on:
+  workflow_dispatch:
   push:
     paths: ["src/components/**", "src/stories/**", "src/css/**"]
     branches: main
