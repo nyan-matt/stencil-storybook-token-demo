@@ -3,6 +3,8 @@ This is a companion project to [token-demo-src](https://github.com/nyan-matt/tok
 
 This repo contains a sample component built in [Stencil](https://stenciljs.com) documented in [Storybook](https://storybook.js.org/) that consumes design token pipeline outputs (css variables) for a themeable button component. 
 
+The repository has a [companion blog post](https://matthewrea.com/blog/design-token-automation-from-figma-to-storybook/) if you'd like more context.
+
 ## High-level workflow
 ### [`token-demo-src`](https://github.com/nyan-matt/token-demo-src)
 - Watch for design token changes
